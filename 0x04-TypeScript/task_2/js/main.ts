@@ -4,7 +4,7 @@ interface DirectorInterface{
   workDirectorTasks(): string;
 }
 
-interface TeacherInterface{
+interface TeacherInterface {
     workFromHome(): string;
     getCoffeeBreak(): string;
     workTeacherTasks(): string;
