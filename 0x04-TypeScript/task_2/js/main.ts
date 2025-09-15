@@ -39,6 +39,9 @@ class Teacher implements TeacherInterface{
   }
 }
 
-function createEmployee(){
-  
-}
+function createEmployee({salary}: {salary: number | string}){
+  if( typeof(salary) === "number" && salary < 500){
+    return new Teacher();
+  }
+  return new Director();
+} 
