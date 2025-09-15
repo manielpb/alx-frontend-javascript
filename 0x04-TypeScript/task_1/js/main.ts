@@ -26,7 +26,7 @@ interface StudentClassInterface{
   lastName: string;
 }
 
-class StudentClass{
+class StudentClass {
 
   constructor(firstName: string, lastName: string){
     this.firstName = firstName;
@@ -39,7 +39,7 @@ class StudentClass{
     return 'Currently working'
   }
 
-   displayName(firstName: string): string{
-    return `${firstName}`
+   displayName(){
+    return `${this.firstName}`;
    }
 }
