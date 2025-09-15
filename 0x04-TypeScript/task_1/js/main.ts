@@ -39,7 +39,7 @@ class StudentClass {
     return 'Currently working'
   }
 
-   displayName(){
+   displayName(): string{
     return `${this.firstName}`;
    }
 }
