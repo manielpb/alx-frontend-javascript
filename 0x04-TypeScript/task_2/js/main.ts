@@ -48,10 +48,12 @@ function createEmployee({salary}: {salary: number | string}): Teacher | Director
   return new Director();
 } 
 
-function isDirector(employee: Teacher | Director): employee is  Director{
+type Subjects:string = "Math" | "History";
 
-}
-
-function executeWork(employee: Teacher | Direcctor): employee is Director{
-  return instanceof workDirectorTasks()
+function teachClass(todayClass): string{
+  if(todayClass === "Math"){
+    return "  Teaching Math "
+  } else {
+    return " Teaching History "
+  }
 }
