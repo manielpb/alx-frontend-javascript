@@ -4,13 +4,13 @@ import { RowID, RowElement } from "./interface.js";
 import * as CRUD from "./crud.js";
 
 const row: RowElement = {
-    firstName: "GuilLaume",
+    firstName: "Guillaume",
     lastName: "salva",
 }
 
-const newRowID: RowID = insertRow();
+const newRowID: RowID = CRUD.insertRow(row);
 
-const updatedRow: RowElement = 23;
+const updatedRow: RowElement = CRUD.updateRow();
 
-updateRow();
-deleteRow();
+updateRow(row);
+deleteRow(rowId);
